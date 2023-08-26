@@ -1,0 +1,71 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    background-position: center center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2em;
+}
+.container_title {
+   font-family:Arial, Helvetica, sans-serif;
+   color: rgb(214, 147, 30);
+    text-shadow: 5px 0.1em 0.1em #09021c99;
+    border-radius: 3px;
+    font-size: 3rem;
+
+}
+ .container_phrase {
+    width: 100%;
+    max-width: 30em;
+    background-color: rgb(235, 226, 226);
+    padding: 1em 2em;
+    line-height: 1.4;
+    border-radius: 0.7em;
+    box-shadow: 0.5em 0.5em 0.1em 0.1em rgb(56, 55, 55);
+ }
+
+ .container_bibleNotes{
+   font-family:  sans-serif ;
+   color: #030009;
+   display: flex;
+   justify-content: flex-end;
+   border: #030009;
+ }
+ .container_btn {
+   background-color:rgb(216, 202, 170);
+    padding: 0.8em 1.2em;
+    border-radius: 0.7em;
+    font-size: 1rem;
+    transition: all 200ms ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+ }
+               
+.container_btn:hover {
+   opacity: 1;
+   transform: scale(1.05);
+   box-shadow: 0 0 0.9em 0.5em rgb(68, 62, 74);
+}
+
+.container_btn::before{
+    content: '';
+    width: 0;
+    height: 3em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgb(75, 33, 118) 0%, #8749e6, rgb(164, 125, 211) 100%);
+    transition: .5s ease;
+    z-index: -1;
+}
+
+.container_btn:hover::before {
+
+    width: 10em;
+}
+
+
+
